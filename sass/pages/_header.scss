@@ -1,0 +1,200 @@
+.logo {
+  margin-left: 2rem;
+  &__text {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  @include respond(tap-port) {
+  }
+}
+
+.home {
+  @include respond(tap-port) {
+    margin-left: 1.5rem;
+  }
+  &__icon {
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all 0.2s;
+    &:hover {
+      background-color: dimgray;
+    }
+    &:active {
+      color: $color-white;
+      background-color: rgba(105, 105, 105, 0.37);
+    }
+  }
+}
+
+.search {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-left: 1rem;
+  @include respond(tap-port) {
+    width: 63%;
+    justify-content: flex-start;
+  }
+
+  &__input {
+    width: 80%;
+    border-radius: 50px;
+
+    // &--active + div {
+    //   transform: scale(1);
+    // }
+  }
+  &__btn {
+    margin-left: -4rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__model {
+    position: absolute;
+    left: 0%;
+    top: 6rem;
+    width: 100%;
+    border-radius: 5px;
+    transform: scale(0);
+    z-index: 10;
+    transition: all 0.2s;
+    & a {
+      display: flex;
+      padding: 1rem;
+      &:active {
+        color: grey;
+      }
+      & > h2 {
+        margin-left: 1rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+.menu {
+  width: 35%;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  background-color: #333;
+  border-radius: 5px;
+  position: relative;
+  margin-top: -0.5rem;
+  @include respond(tap-port) {
+    position: absolute;
+    top: 8rem;
+    right: 0%;
+    width: 60%;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+    .menu__list--active {
+      display: block;
+    }
+    @include respond(tap-port) {
+      flex-direction: column;
+    }
+
+    &--item {
+      @include respond(tap-port) {
+        padding: 1rem;
+      }
+      @media screen and (max-width: 1000px) {
+        font-size: small;
+      }
+      & a {
+        padding: 0.5rem;
+      }
+      & a:hover {
+        background-color: dimgray;
+      }
+      & a:focus {
+        background-color: rgba(105, 105, 105, 0.37);
+        outline: 1px solid $color-white;
+        outline-style: dotted;
+      }
+    }
+
+    &--model {
+      display: none;
+      & > li {
+        padding: 1rem;
+      }
+      @include respond(tap-port) {
+        width: 80%;
+        padding: 1rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+      }
+      // @include respond(desktop) {
+      //   position: absolute;
+      //   top: 6rem;
+      //   // width: 80%;
+      //   // padding: 1rem;
+      //   // margin-top: 2rem;
+      //   // margin-left: 2rem;
+      //   left: 0%;
+      // }
+      // @media screen and (min-width: 890px) {
+      //   position: absolute;
+      //   top: 6rem;
+      //   left: 0%;
+      // }
+      @media screen and (min-width: 900px) {
+        position: absolute;
+        top: 6rem;
+        left: 0%;
+      }
+    }
+  }
+
+  &__user {
+    margin-right: 2%;
+    margin-top: -3px;
+    padding: 0.3rem;
+    position: relative;
+    border-radius: 5px;
+    transition: all 0.2s;
+    @include respond(tap-port) {
+      a {
+        display: flex;
+      }
+    }
+    &:hover {
+      background-color: #333;
+      border: 1px solid $color-white;
+      transform: scale(1.1);
+    }
+    &:active {
+      background-color: #000;
+    }
+
+    & a:focus,
+    a:active {
+      & + .model {
+        transform: scale(1);
+      }
+    }
+
+    & > .model {
+      position: absolute;
+      top: 7rem;
+      left: 0;
+      transform: scale(0);
+      transition: all 0.2s;
+    }
+  }
+}
+.img-dp {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 1px solid white;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://127.0.0.1:8080/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/style.css">
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <div class="logo">
+          <span class="logo__text">Piver</span>
+        </div>
+        <div class="home">
+          <a class="link home__link" href="http://127.0.0.1:8080/#">
+            <ion-icon class="icon home__icon" name="home"></ion-icon>
+          </a>
+        </div>
+        <form class="search">
+          <input class="search__input input" type="search" placeholder="search">
+          <div class="model search__model">
+            model
+          </div>
+          <button class="btn search__btn">
+            <ion-icon class="icon search__icon" name="search-outline"></ion-icon>
+          </button>
+        </form>
+          <nav class="menu">
+             <ul class="menu__list">
+              <li class="menu__list--item">
+                <a href="http://127.0.0.1:8080/#">
+                  <span>Services</span>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </a>
+                <ul class="model menu__list--model">
+                  <li>about-1</li>
+                  <li>second-2</li>
+                  <li>third-3</li>
+                  <li>fourth-e4</li>
+                </ul>
+             </li>
+             <li class="menu__list--item">
+              <a href="http://127.0.0.1:8080/#">
+                <span>Education</span>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </a>
+             </li>
+             <li class="menu__list--item">
+              <a href="http://127.0.0.1:8080/#">
+                <span>Abouts</span>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </a>
+            </li>               
+             </ul>
+             
+          </nav>
+          <div class="menu__user">
+           <a href="http://127.0.0.1:8080/#">
+            <img class="img-dp" src="./Document_files/download.jpeg" alt="">
+            <ion-icon class="icon" name="chevron-down-outline"></ion-icon>
+           </a>
+            <div class="model">
+              <a href="http://127.0.0.1:8080/#">fjshafkj</a>
+            </div>
+            
+          </div>
+        
+        <div class="navigation">
+          <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+          <label for="navi-toggle" class="navigation__button">
+              <span class="navigation__icon">&nbsp;</span>
+          </label>
+
+          <div class="navigation__background">&nbsp;</div>
+      </div></header>
+      <div class="sidebar">sidebar</div>
+      <div class="content">content</div>
+    </main>
+    <!-- <div class="model">model</div> -->
+    <script type="module" src="./Document_files/ionicons.esm.js"></script>
+    <script nomodule="" src="./Document_files/ionicons.js"></script>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
+</script>
+
+
+</body></html>

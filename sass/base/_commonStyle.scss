@@ -1,0 +1,105 @@
+ul {
+  list-style: none;
+}
+h1 {
+  font-weight: 300;
+}
+a:link,
+a:visited {
+  color: $color-white;
+  text-decoration: none;
+}
+
+a:active {
+  color: #e2dfdf;
+}
+p {
+  font-size: 1.3rem;
+}
+.title {
+  font-size: 2.65rem;
+  letter-spacing: 1px;
+}
+
+.learn-more {
+  padding: 0.3rem;
+  padding-left: 0.5rem;
+  border-radius: 5px;
+  background-color: rgb(120, 120, 121);
+  display: inline-block;
+  transition: all 0.2s;
+  &:hover {
+    background-color: rgba(120, 120, 121, 0.53);
+  }
+  & > a:link,
+  a:visited {
+    font-size: 2rem;
+  }
+
+  & > a:active {
+    color: rgb(187, 185, 183);
+  }
+}
+.description {
+  & > P {
+    padding-bottom: 0.8rem;
+    font-size: 1.5rem;
+  }
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  transition: all 0.2s;
+  border-radius: 5px;
+  padding: 1rem;
+  &:hover {
+    background-color: dimgray;
+  }
+  &:active {
+    transform: translateY(2px);
+    background-color: rgba(105, 105, 105, 0.37);
+  }
+}
+.remove-style {
+  padding: 0px;
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+// &__icon {
+//   padding: 1rem;
+//   border-radius: 5px;
+//   transition: all 0.2s;
+//   &:hover {
+//     background-color: dimgray;
+//   }
+//   &:active {
+//     color: $color-white;
+//     background-color: rgba(105, 105, 105, 0.37);
+//   }
+// }
+
+/*class selecotor /*/
+.icon {
+  font-size: 3rem;
+  color: $color-white;
+  display: inline-block;
+  &:hover {
+    color: rgb(230, 225, 225);
+  }
+}
+.input {
+  border: 2px solid #fff;
+  padding: 1rem;
+  background: #333;
+  font-size: 1.5rem;
+  transition: all 0.2s;
+  color: $color-white;
+  border-radius: 50px;
+  &:focus {
+    outline: none;
+    width: 100%;
+  }
+}
